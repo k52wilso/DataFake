@@ -8,6 +8,7 @@ DataFake is heavily inspired by Faker's [Faker](https://github.com/fzaninotto/Fa
 # Table of Contents
 
 - [Installation](#installation)
+- [Basic Usage](#basic-usage)
 
 ## Installation
 
@@ -20,7 +21,6 @@ npm install datafake
 Use `new DataFake()` to create and initialize some fake data, which can generate data by accessing properties named after the type of data you want.
 
 ```javascript
-<?php
 // require DataFake
 var DataFake = require('datafake');
 
