@@ -9,6 +9,8 @@ DataFake is heavily inspired by Faker's [Faker](https://github.com/fzaninotto/Fa
 
 - [Installation](#installation)
 - [Basic Usage](#basic-usage)
+- [Formatters](#formatters)
+	- [Base](#base)
 
 ## Installation
 
@@ -35,3 +37,21 @@ console.log(data.randomNumber(3));
 console.log(data.shuffle([1,2,3]));
  // [3,1,2]
 ```
+
+## Formatters
+
+Properties such as (`name`, `address`, and `lorem`) are called "formatters". DataFake used many of them, packaged in "providers". Here is a list of the bundled formatters in the default locale.
+
+### `\Base`
+
+    randomDigit             // 7
+    randomDigitNotNull      // 5
+    randomNumber(length) // 79907610
+    randomFloat(length,decimals) // 48.8932
+    numberBetween(min,max) // 8567
+    randomLetter            // 'b'
+    // returns randomly ordered subsequence of a provided array
+    randomElements(array,count) // ['c']
+    randomElement(array) // 'b'
+    shuffle('hello, world') // 'rlo,h eoldlw'
+    shuffle(array) // [2, 1, 3]
