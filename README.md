@@ -54,4 +54,4 @@ Properties such as (`name`, `address`, and `lorem`) are called "formatters". Dat
     randomElements(array,count) // ['c']
     randomElement(array) // 'b'
     shuffle('hello, world') // 'rlo,h eoldlw'
-    shuffle(array) // [2, 1, 3]
+    shuffle(array) // [2, 1, 3]  
