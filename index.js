@@ -1,5 +1,6 @@
 
 var Base = require('./base/base');
+var Lorem = require('./provider/lorem');
 
 let instance = null;
 
@@ -13,6 +14,7 @@ class DataFake {
 
         // Functions imported
         this.base = new Base();
+        this.lorem = new Lorem();
 
         return instance;
     }
@@ -44,10 +46,20 @@ class DataFake {
         return this.base.shuffle(obj);
     }
 
+    //Lorem Functions
+    word(){
+        return this.lorem.word();
+    }
+    words(number,asText){
+        return this.lorem.words(number,asText);
+    }
 
     
 }
 
+var data = new DataFake();
+
+console.log(data.words(3,true));
 
 
 

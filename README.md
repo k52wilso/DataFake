@@ -24,7 +24,7 @@ Use `new DataFake()` to create and initialize some fake data, which can generate
 // require DataFake
 var DataFake = require('datafake');
 
-// use the factory to create a Faker\Generator instance
+// Create the DataFake instance
 var data = new DataFake();
 
 // generate data by accessing functions

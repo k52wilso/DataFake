@@ -1,13 +1,13 @@
 {
   "name": "datafake",
-  "version": "1.0.5",
+  "version": "1.0.9",
   "description": "This is module contains fake data to be used for development",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "json"
+    "json","data","fake"
   ],
   "author": "Kyle Wilson-McCormack",
   "license": "MIT"
