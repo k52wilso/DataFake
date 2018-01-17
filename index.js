@@ -1,6 +1,8 @@
 
 var Base = require('./base/base');
 var Lorem = require('./provider/lorem');
+var Person = require('./provider/en_US/person');
+var Address = require('./provider/en_US/address');
 
 let instance = null;
 
@@ -15,6 +17,8 @@ class DataFake {
         // Functions imported
         this.base = new Base();
         this.lorem = new Lorem();
+        this.person = new Person();
+        this.address = new Address();
 
         return instance;
     }
@@ -53,13 +57,39 @@ class DataFake {
     words(number,asText){
         return this.lorem.words(number,asText);
     }
+    text(nChars){
+        return this.lorem.text(nChars);
+    }
 
+    // en_US Person
+    title(gender){
+        return this.person.title(gender);
+    }
+    name(gender){
+        return this.person.name(gender);
+    }
     
+    // en_US Address
+    addresses() {
+        return this.address.addresses();
+    }
+    getAddress(){
+        return this.address.getAddress();
+    }
+    city(){
+        return this.address.city();
+    }
+    cities(){
+        return this.address.cities();
+    }
+    countries(){
+        return this.address.countries();
+    }
 }
 
 var data = new DataFake();
 
-console.log(data.words(3,true));
+console.log(data.addresses());
 
 
 
